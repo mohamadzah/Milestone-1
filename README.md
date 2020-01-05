@@ -20,7 +20,7 @@ b. now the server will accept a connection, once a connection is made the code w
 
 ####
 
-![Flight exmaple](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![Flight exmaple](https://github.com/mohamadzah/flightgearSimulator/blob/master/Flight%20example.PNG)
 
 
 
