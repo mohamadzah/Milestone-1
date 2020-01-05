@@ -30,7 +30,7 @@ so you have to do the following:
 
 **b. you have to open the Flightgear Simulator and add the two lines under Additional settings.**
 
-**c. you will compile the code with the given line. **
+**c. you will compile the code with the given line.**
 
 **d. run the program using the command ./a.out filename. (filename is the name of the file that contains the commands that we will interpret and parse).**
 
@@ -50,5 +50,5 @@ More on server-client relationship: https://en.wikipedia.org/wiki/Client%E2%80%9
 
 ###### Authors
 
-The author(s) of this code is Mohamad Zahalka
+***The author(s) of this code is Mohamad Zahalka***
 
