@@ -19,22 +19,22 @@ airplane's behaviour, eventually resulting in the airplane's takeoff and the fli
 To use this project, you have to first add a file called generic_small.xml to the Data/Protocol folder which can be found in the Flightgear simulator's files, then you run the flightgear simulator and go to the settings, scroll down and under Additional settings
 add these two lines:
 
-**--generic=socket,out,10,127.0.0.1,5400,tcp,generic_small
-**--telnet=socket,in,10,127.0.0.1,5402,tcp
+**--generic=socket,out,10,127.0.0.1,5400,tcp,generic_small**
+**--telnet=socket,in,10,127.0.0.1,5402,tcp**
 
 now we need to the compile the code, we compile it with the following line : g++ -std=c++14 *.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
 then you have to run it using the following command: ./a.out filename Once the code is running our server will be listening and waiting to accept a connection, now all you have to do is launch the simulator and click on Fly!
 so you have to do the following: 
 
-**a. you have to first add a file called generic_small.xml to the Data/Protocol folder
+**a. you have to first add a file called generic_small.xml to the Data/Protocol folder**
 
-**b. you have to open the Flightgear Simulator and add the two lines under Additional settings.
+**b. you have to open the Flightgear Simulator and add the two lines under Additional settings.**
 
-**c. you will compile the code with the given line. 
+**c. you will compile the code with the given line. **
 
-**d. run the program using the command ./a.out filename. (filename is the name of the file that contains the commands that we will interpret and parse).
+**d. run the program using the command ./a.out filename. (filename is the name of the file that contains the commands that we will interpret and parse).**
 
-**e. launch the flightgear simulator and click on Fly!.
+**e. launch the flightgear simulator and click on Fly!.**
 
 #### Visuals
 
