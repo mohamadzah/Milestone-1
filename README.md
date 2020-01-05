@@ -26,15 +26,15 @@ now we need to the compile the code, we compile it with the following line : g++
 then you have to run it using the following command: ./a.out filename Once the code is running our server will be listening and waiting to accept a connection, now all you have to do is launch the simulator and click on Fly!
 so you have to do the following: 
 
-**_a._ you have to first add a file called generic_small.xml to the Data/Protocol folder**
+**_1._ you have to first add a file called generic_small.xml to the Data/Protocol folder**
 
-**_b._ you have to open the Flightgear Simulator and add the two lines under Additional settings.**
+**_2._ you have to open the Flightgear Simulator and add the two lines under Additional settings.**
 
-**_c._ you will compile the code with the given line.**
+**_3._ you will compile the code with the given line.**
 
-**_d._ run the program using the command ./a.out filename. (filename is the name of the file that contains the commands that we will interpret and parse).**
+**_4._ run the program using the command ./a.out filename. (filename is the name of the file that contains the commands that we will interpret and parse).**
 
-**_e._ launch the flightgear simulator and click on Fly!.**
+**_5._ launch the flightgear simulator and click on Fly!.**
 
 #### Visuals
 
