@@ -10,21 +10,34 @@ The flightgear simulator allows us to connect to its server as a client and vice
 
 How does our project exactly do these steps?
 -
-The program opens a server that will allow the simulator to connect to, the simulator will connect to our server and will begin
-sending us the values (10 times in a second) of the flight's state, then we will connect to the simulator as a client and throughout the program as we read and interpret the file that was provided to us, we will begin to send commands that will change and control the
+The program opens a server that will allow the simulator to connect to, the simulator will connect to our server and will begin to 
+send us values (10 times in a second) of the flight's state, then we will connect to the simulator as a client and throughout the program as we read and interpret the file that was provided to us, we will begin to send commands that will change and control the
 airplane's behaviour, eventually resulting in the airplane's takeoff and the flight will begin (A picture of an airplane in the midst of it's flight is provided in this file).
 
 ### Usage
 
-To use this project, you have to first compile it with the following line : g++ -std=c++14 *.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
-then you have to run it using the following command: ./a.out filename Once the code is running our server will be listening and waiting to accept a connection
+To use this project, you have to first add a file called generic_small.xml to the Data/Protocol folder which can be found in the Flightgear simulator's files, then you run the flightgear simulator and go to the settings, scroll down and under Additional settings
+add these two lines:
+
+--generic=socket,out,10,127.0.0.1,5400,tcp,generic_small
+-
+--telnet=socket,in,10,127.0.0.1,5402,tcp
+-
+
+now we need to the compile the code, we compile it with the following line : g++ -std=c++14 *.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
+then you have to run it using the following command: ./a.out filename Once the code is running our server will be listening and waiting to accept a connection, now all you have to do is launch the simulator and click on Fly!
 so you have to do the following: 
 
-a. you have to open the Flightgear Simulator and click on fly
-
-b. now the server will accept a connection, once a connection is made the code will proceed with the execution.
-
-
+a. you have to first add a file called generic_small.xml to the Data/Protocol folder
+-
+b. you have to open the Flightgear Simulator and add the two lines under Additional settings.
+-
+c. you will compile the code with the given line. 
+-
+d. run the program using the command ./a.out filename. (filename is the name of the file that contains the commands that we will interpret and parse).
+-
+e. launch the flightgear simulator and click on Fly!.
+-
 #### Visuals
 
 Here is an example of an airplane that we controlled and made fly.
@@ -37,5 +50,7 @@ You can find a lot of help on stackoverflow.com, the stackoverflow community has
 
 More on server-client relationship: https://en.wikipedia.org/wiki/Client%E2%80%93server_model
 
+###### Authors
 
+The author(s) of this code is Mohamad Zahalka
 
