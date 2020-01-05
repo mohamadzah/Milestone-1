@@ -34,7 +34,7 @@ so you have to do the following:
 
 **_d._ run the program using the command ./a.out filename. (filename is the name of the file that contains the commands that we will interpret and parse).**
 
-**e. launch the flightgear simulator and click on Fly!.**
+**_e._ launch the flightgear simulator and click on Fly!.**
 
 #### Visuals
 
