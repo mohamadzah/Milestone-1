@@ -20,6 +20,7 @@ To use this project, you have to first add a file called generic_small.xml to th
 add these two lines:
 
 **--generic=socket,out,10,127.0.0.1,5400,tcp,generic_small**
+
 **--telnet=socket,in,10,127.0.0.1,5402,tcp**
 
 now we need to the compile the code, we compile it with the following line : g++ -std=c++14 *.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
