@@ -4,13 +4,20 @@ Milestone 1 is a project that we created as a part of two milestones that we hav
 
 ## Description
 
-In this project we  that 
+In this project we create an interpreter that interprets a given file in order to control and fly an airplane in the virtual scope of 
+the program Flightgear Simulator.
+The flightgear simulator allows us to connect to its server as a client and vice versa, meaning in this project we will connect to the simulator as a client in order to send commands to control the flight's information and change them, and the simulator will connect to our code as a client as a means to send the constantly changing values of the flight (e.g the airplane's altittude).
 
+How does our project exactly do these steps?
+-
+The program opens a server that will allow the simulator to connect to, the simulator will connect to our server and will begin
+sending us the values (10 times in a second) of the flight's state, then we will connect to the simulator as a client and throughout the program as we read and interpret the file that was provided to us, we will begin to send commands that will change and control the
+airplane's behaviour, eventually resulting in the airplane's takeoff and the flight will begin (A picture of an airplane in the midst of it's flight is provided in this file).
 
 ### Usage
 
 To use this project, you have to first compile it with the following line : g++ -std=c++14 *.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
-then you have to run it using the following command: ./a.out. Once the code is running our server will be listening and waiting to accept a connection
+then you have to run it using the following command: ./a.out filename Once the code is running our server will be listening and waiting to accept a connection
 so you have to do the following: 
 
 a. you have to open the Flightgear Simulator and click on fly
@@ -18,11 +25,17 @@ a. you have to open the Flightgear Simulator and click on fly
 b. now the server will accept a connection, once a connection is made the code will proceed with the execution.
 
 
-####
+#### Visuals
+
+Here is an example of an airplane that we controlled and made fly.
 
 ![Flight exmaple](https://github.com/mohamadzah/flightgearSimulator/blob/master/Flight%20example.PNG)
 
+##### Support
 
+You can find a lot of help on stackoverflow.com, the stackoverflow community has helped me a great deal and i know that this community can do the same for you!
+
+More on server-client relationship: https://en.wikipedia.org/wiki/Client%E2%80%93server_model
 
 
 
