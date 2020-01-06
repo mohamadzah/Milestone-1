@@ -51,6 +51,7 @@ Here is an example of an airplane that we controlled and made fly.
 ##### Support
 
 More on server-client relationship: https://en.wikipedia.org/wiki/Client%E2%80%93server_model
+Flightgear simulator: https://www.flightgear.org/
 
 ###### Authors
 
