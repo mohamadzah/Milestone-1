@@ -24,7 +24,8 @@ add these two lines:
 **--telnet=socket,in,10,127.0.0.1,5402,tcp**
 
 now we need to the compile the code, we compile it with the following line : g++ -std=c++14 *.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
-then you have to run it using the following command: ./a.out filename Once the code is running our server will be listening and waiting to accept a connection, now all you have to do is launch the simulator and click on Fly!
+then you have to run it using the following command: ./a.out filename (filename is fly.txt for this project)
+Once the code is running our server will be listening and waiting to accept a connection, now all you have to do is launch the simulator and click on Fly!
 so you have to do the following: 
 
 **_1._ you have to first add a file called generic_small.xml to the Data/Protocol folder**
