@@ -16,7 +16,7 @@ airplane's behaviour, eventually resulting in the airplane's takeoff and the fli
 
 ### Usage
 
-To use this project, you have to first add a file called generic_small.xml to the Data/Protocol folder which can be found in the Flightgear simulator's files (whereever downloaded the simulator), then you run the flightgear simulator and go to the settings, scroll down and under Additional settings
+To use this project, you have to first add a file called generic_small.xml to the Data/Protocol folder which can be found in the Flightgear simulator's files (wherever you downloaded the simulator), then you run the flightgear simulator and go to the settings, scroll down and under Additional settings
 add these two lines:
 
 **--generic=socket,out,10,127.0.0.1,5400,tcp,generic_small**
