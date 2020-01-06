@@ -41,7 +41,7 @@ so you have to do the following:
 
 Here is an example of an airplane that we controlled and made fly.
 
-![Flight exmaple](https://github.com/mohamadzah/flightgearSimulator/blob/master/Flight%20example.PNG)
+![Flight exmaple](https://github.com/mohamadzah/Milestone-1/blob/master/Flight%20Example.PNG)
 
 ##### Support
 
