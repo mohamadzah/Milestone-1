@@ -179,7 +179,6 @@ void OpenServerCommand::openServer(vector<string> array, int index) {
         int x = round(val);
         address.sin_port = htons(x);
     } else {
-      //  cout <<port << endl;
         address.sin_port = htons(stoi(port));
     }
 
@@ -192,7 +191,6 @@ void OpenServerCommand::openServer(vector<string> array, int index) {
     //3-
     //listening to connections.
     listen(socketSC, 5);
-    //char buffer[1024] = {0};
 
     int cl = sizeof(clin);
     int newSC = accept(socketSC, (struct sockaddr *) &clin, (socklen_t *) &cl);
@@ -207,7 +205,7 @@ void OpenServerCommand::openServer(vector<string> array, int index) {
         char buffer[1024] = {0};
         int valread = read(newSC, buffer, 1024);
         if (valread < 0) {
-            cerr << "Error reading from the client" << endl;
+            cerr << "error occured" << endl;
             closeSocketServer();
             exit(1);
         }
