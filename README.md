@@ -40,6 +40,8 @@ so you have to do the following:
 
 **_5._ launch the flightgear simulator and click on Fly!.**
 
+**_Note_**: the fly.txt should be in the same directory as the project!
+
 #### Visuals
 
 Here is an example of an airplane that we controlled and made fly.
