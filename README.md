@@ -33,7 +33,7 @@ so you have to do the following:
 
 **_3._ you will compile the code with the given line.**
 
-**_4._ run the program using the command ./a.out filename. (filename is the name of the file that contains the commands that we will interpret and parse).**
+**_4._ run the program using the command ./a.out filename. (fly.txt is the filename that contains the commands that we will interpret and parse).**
 
 **_5._ launch the flightgear simulator and click on Fly!.**
 
