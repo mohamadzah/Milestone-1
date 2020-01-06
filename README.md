@@ -8,13 +8,13 @@ In this project we create an interpreter that interprets a given file in order t
 the program Flightgear Simulator.
 The flightgear simulator allows us to connect to its server as a client and vice versa, meaning in this project we will connect to the simulator as a client in order to send commands to control the flight's information and change them, and the simulator will connect to our code as a client as a means to send the constantly changing values of the flight (e.g the airplane's altittude).
 
-How does our project exactly do these steps?
+Desgin
 -
 The program opens a server that will allow the simulator to connect to, the simulator will connect to our server and will begin to 
 send us values (10 times in a second) of the flight's state, then we will connect to the simulator as a client and throughout the program as we read and interpret the file that was provided to us, we will begin to send commands that will change and control the
 airplane's behaviour, eventually resulting in the airplane's takeoff and the flight will begin (A picture of an airplane in the midst of it's flight is provided in this file).
 
-### Usage
+### How to run
 
 To use this project, you have to first add a file called generic_small.xml to the Data/Protocol folder which can be found in the Flightgear simulator's files (wherever you downloaded the simulator), then you run the flightgear simulator and go to the settings, scroll down and under Additional settings
 add these two lines:
