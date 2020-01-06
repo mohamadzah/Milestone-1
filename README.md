@@ -45,7 +45,7 @@ Here is an example of an airplane that we controlled and made fly.
 
 ##### Support
 
-You can find a lot of help on stackoverflow.com, the stackoverflow community has helped me a great deal and i know that this community can do the same for you!
+You can find a lot of help on stackoverflow.com, the stackoverflow community has helped me a great deal and i know that they can do the same for you!
 
 More on server-client relationship: https://en.wikipedia.org/wiki/Client%E2%80%93server_model
 
